@@ -13,5 +13,6 @@ func main() {
 	e.Use(middleware.Recover())
 
 	e.POST("/create-bridge", handlers.CreateBridge)
+	e.POST("/create-tap", handlers.CreateTap)
 	e.Logger.Fatal(e.Start(":8080"))
 }
